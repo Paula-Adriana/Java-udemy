@@ -2,22 +2,19 @@ package composicao;
 
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Iterator;
 import java.util.List;
 
 public class Worker {
 	
 	private String name;
 	private WorkerLevel level;
-	private Double baseSalary;
+	private double baseSalary;
 	
 	//composição de objetos - associações
 	private Departament departament;
 	private List<HourContract> contracts = new ArrayList<HourContract>();
 	
-	public Worker() {}
-	
-	public Worker(String name, WorkerLevel workLevel, Double baseSalary, Departament departament) {
+	public Worker(String name, WorkerLevel workLevel, double baseSalary, Departament departament) {
 		this.name = name;
 		this.level = workLevel;
 		this.baseSalary = baseSalary;
@@ -63,7 +60,7 @@ public class Worker {
 	}
 	
 	//salario base + o results do mes/ano do contrato daquele mes
-	public Double income (Integer year, Integer month) {
+	public double income (Integer month,Integer year) {
 		double sum = baseSalary;
 		//setar um calendario falso para comparaçao posterior
 		Calendar cal = Calendar.getInstance();

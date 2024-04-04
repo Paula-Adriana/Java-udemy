@@ -8,8 +8,6 @@ public class HourContract {
 	private Double valuePerHour;
 	private Integer hours;
 	
-	public HourContract() {}
-	
 	public HourContract(Date date, Double valuePerHour, Integer hours) {
 		this.date = date;
 		this.valuePerHour = valuePerHour;
