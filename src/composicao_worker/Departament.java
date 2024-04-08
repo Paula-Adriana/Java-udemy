@@ -1,4 +1,4 @@
-package composicao;
+package composicao_worker;
 
 public class Departament {
 

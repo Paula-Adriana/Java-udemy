@@ -1,4 +1,4 @@
-package composicao;
+package composicao_worker;
 
 import java.util.ArrayList;
 import java.util.Calendar;
