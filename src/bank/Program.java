@@ -42,6 +42,7 @@ public class Program {
 			acc5.loan(200.0);
 			System.out.println("Loan!");
 		}
+		BusinessAccount acc5 = (BusinessAccount) acc3;
 		
 		
 	}
